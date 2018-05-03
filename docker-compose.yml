@@ -1,0 +1,38 @@
+version: "3.2"
+services:
+
+  xenial:
+    image: ubuntu:xenial
+    volumes: 
+      - type: bind
+        source: .
+        target: /opensc
+    network_mode: "host"
+    command:
+      - /bin/bash
+      - /opensc/OpenSC-build.sh
+    tty: true
+
+  artful:
+    image: ubuntu:artful
+    volumes: 
+      - type: bind
+        source: .
+        target: /opensc
+    network_mode: "host"
+    command:
+      - /bin/bash
+      - /opensc/OpenSC-build.sh
+    tty: true
+
+  bionic:
+    image: ubuntu:bionic
+    volumes: 
+      - type: bind
+        source: .
+        target: /opensc
+    network_mode: "host"
+    command:
+      - /bin/bash
+      - /opensc/OpenSC-build.sh
+    tty: true
