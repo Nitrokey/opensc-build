@@ -10,9 +10,9 @@ Just download the two .deb packages for your version of Ubuntu and install them.
 
 Ubuntu Codename | Ubuntu version | Direct Link to Package Files
 ----------------|----------------|-----------------------------
-[xenial](xenial/) | 16.04 | [opensc](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc_0.18.0%7Erc1storageopc3_amd64.deb) [opensc-pkcs11](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc-pkcs11_0.18.0%7Erc1storageopc3_amd64.deb)
-[artful](artful/) | 17.10 | [opensc](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc_0.18.0%7Erc1storageopc3_amd64.deb) [opensc-pkcs11](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc-pkcs11_0.18.0%7Erc1storageopc3_amd64.deb)
-[bionic](bionic/) | 18.04 | [opensc](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc_0.18.0%7Erc1storageopc3_amd64.deb) [opensc-pkcs11](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc-pkcs11_0.18.0%7Erc1storageopc3_amd64.deb)
+xenial | 16.04 | [opensc-0.18.0-rc1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc_0.18.0%7Erc1storageopc3_amd64.deb), [opensc-pkcs11-0.18.0-rc1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc-pkcs11_0.18.0%7Erc1storageopc3_amd64.deb)
+artful | 17.10 | [opensc-0.18.0-rc1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc_0.18.0%7Erc1storageopc3_amd64.deb), [opensc-pkcs11-0.18.0-rc1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc-pkcs11_0.18.0%7Erc1storageopc3_amd64.deb)
+bionic | 18.04 | [opensc-0.18.0-rc1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc_0.18.0%7Erc1storageopc3_amd64.deb), [opensc-pkcs11-0.18.0-rc1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc-pkcs11_0.18.0%7Erc1storageopc3_amd64.deb)
 
 After downloading the packages please type in the following in a terminal:
 
