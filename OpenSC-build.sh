@@ -1,12 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 openscver='0.18.0-rc1' # as stated on GitHub
-openscver_ubuntu='0.18.0~rc1storageopc3' # package name in PPA/Ubuntu
-repourl=http://de.archive.ubuntu.com/ubuntu/
-codename=$(cat /etc/os-release | grep UBUNTU_CODENAME | cut -f2 -d'=')
+openscver_package='0.18.0~rc1storageopc3' # package name
+system=$(grep ^ID= /etc/os-release | cut -f2 -d'=')
 
+if [ "$system" == "ubuntu" ]; then 
+    repourl=http://de.archive.ubuntu.com/ubuntu/
+    codename=$(grep UBUNTU_CODENAME /etc/os-release | cut -f2 -d'=')
+    repo="deb-src $repourl $codename universe"
+elif [ "$system" == "debian" ]; then
+    repourl=http://ftp2.de.debian.org/debian/
+    codename=$(grep "VERSION=" /etc/os-release | cut -f2 -d'(' | cut -f1 -d ')')
+    repo="deb-src $repourl $codename main"
+fi
+    
 # add sources and install software needed
-repo="deb-src $repourl $codename universe"
 sh -c "echo $repo > /etc/apt/sources.list.d/openscbuild.list"
 apt-get update
 apt-get install -y apt-src wget scdaemon libccid pcscd
@@ -27,7 +35,7 @@ mv OpenSC-$openscver opensc-$oldopenscver
 mv $openscver.tar.gz opensc_$oldopenscver.orig.tar.gz
 
 # change package version
-echo "opensc ($openscver_ubuntu) unstable; urgency=medium" >> changelog
+echo "opensc ($openscver_package) unstable; urgency=medium" >> changelog
 echo >> changelog
 echo "  * New upstream release." >> changelog
 echo >> changelog
