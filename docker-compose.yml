@@ -3,7 +3,7 @@ services:
 
   xenial:
     image: ubuntu:xenial
-    volumes:
+    volumes: 
       - type: bind
         source: .
         target: /opensc
@@ -15,7 +15,7 @@ services:
 
   artful:
     image: ubuntu:artful
-    volumes:
+    volumes: 
       - type: bind
         source: .
         target: /opensc
@@ -27,7 +27,7 @@ services:
 
   bionic:
     image: ubuntu:bionic
-    volumes:
+    volumes: 
       - type: bind
         source: .
         target: /opensc
@@ -36,10 +36,10 @@ services:
       - /bin/bash
       - /opensc/OpenSC-build.sh
     tty: true
- 
+    
   jessie:
     image: debian:jessie
-    volumes:
+    volumes: 
       - type: bind
         source: .
         target: /opensc
@@ -51,7 +51,7 @@ services:
 
   stretch:
     image: debian:stretch
-    volumes:
+    volumes: 
       - type: bind
         source: .
         target: /opensc

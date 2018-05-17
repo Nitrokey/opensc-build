@@ -1,7 +1,7 @@
 #!/bin/bash
 
-openscver='0.18.0-rc1' # as stated on GitHub
-openscver_package='0.18.0~rc1storageopc3' # package name
+openscver='0.18.0' # as stated on GitHub
+openscver_package='0.18.0-1~storageopc3' # package name
 system=$(grep ^ID= /etc/os-release | cut -f2 -d'=')
 
 if [ "$system" == "ubuntu" ]; then 
