@@ -2,7 +2,7 @@
 
 This repo contains some selfmade builds of OpenSC for Debian and Ubuntu. They are based on the most recent packages available for each version (working with apt-src). The binaries are built using the official docker containers of the corresponding system and a simple script.
 
-Please have a look at the [docker-compose file](docker-compose.yml) and the [script](OpenSC_build.sh).You can use the script to build the binaries yourself, but you may have to adapt things.
+Please have a look at the [docker-compose file](docker-compose.yml) and the [script](OpenSC-build.sh). You can use the script to build the binaries yourself, but you may have to adapt things.
 
 ## Installation
 
@@ -10,11 +10,12 @@ Just download the two .deb packages for your version of Debian/Ubuntu and instal
 
 Codename | Version | Direct Link to Package Files
 ---------|---------|-----------------------------
-Ubuntu xenial | 16.04 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb)
-Ubuntu artful | 17.10 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb)
-Ubuntu bionic | 18.04 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb)
-Debian Jessie | 8 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/jessie/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/jessie/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb)
-Debian Stretch | 9 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/stretch/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/stretch/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb)
+Ubuntu Xenial | 16.04 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb) <br/> [opensc-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc_0.19.0-1%7Enitrokey_amd64.deb), [opensc-pkcs11-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/xenial/opensc-pkcs11_0.19.0-1%7Enitrokey_amd64.deb)
+Ubuntu Artful | 17.10 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb) <br/> [opensc-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc_0.19.0-1%7Enitrokey_amd64.deb), [opensc-pkcs11-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/artful/opensc-pkcs11_0.19.0-1%7Enitrokey_amd64.deb)
+Ubuntu Bionic | 18.04 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb) <br/> [opensc-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc_0.19.0-1%7Enitrokey_amd64.deb), [opensc-pkcs11-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/bionic/opensc-pkcs11_0.19.0-1%7Enitrokey_amd64.deb)
+Ubuntu Cosmic | 18.10 | [opensc-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/cosmic/opensc_0.19.0-1%7Enitrokey_amd64.deb), [opensc-pkcs11-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/cosmic/opensc-pkcs11_0.19.0-1%7Enitrokey_amd64.deb)
+Debian Jessie | 8 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/jessie/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/jessie/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb) <br/> [opensc-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/jessie/opensc_0.19.0-1%7Enitrokey_amd64.deb), [opensc-pkcs11-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/jessie/opensc-pkcs11_0.19.0-1%7Enitrokey_amd64.deb)
+Debian Stretch | 9 | [opensc-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/stretch/opensc_0.18.0-1%7Estorageopc3_amd64.deb), [opensc-pkcs11-0.18.0-1](https://github.com/Nitrokey/opensc-build/raw/master/stretch/opensc-pkcs11_0.18.0-1%7Estorageopc3_amd64.deb) <br/> [opensc-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/stretch/opensc_0.19.0-1%7Enitrokey_amd64.deb), [opensc-pkcs11-0.19.0-1](https://github.com/Nitrokey/opensc-build/raw/master/stretch/opensc-pkcs11_0.19.0-1%7Enitrokey_amd64.deb)
 
 After downloading the packages please type in the following in a terminal:
 
@@ -27,7 +28,7 @@ sudo mv 41-nitrokey.rules /etc/udev/rules.d/
 sudo udevadm control --reload-rules && sudo udevadm trigger
 # move to download folder and install OpenSC
 cd Downloads
-sudo dpkg --install opensc_0.18.0-1~storageopc3_amd64.deb opensc-pkcs11_0.18.0-1~storageopc3_amd64.deb
+sudo dpkg --install opensc_*_amd64.deb opensc-pkcs11_*_amd64.deb
 ```
 
 ## Removal
