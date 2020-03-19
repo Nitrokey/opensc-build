@@ -37,8 +37,8 @@ services:
       - /opensc/OpenSC-build.sh
     tty: true
 
-  cosmic:
-    image: ubuntu:cosmic
+  eoan:
+    image: ubuntu:eoan
     volumes: 
       - type: bind
         source: .
@@ -63,6 +63,18 @@ services:
 
   stretch:
     image: debian:stretch
+    volumes: 
+      - type: bind
+        source: .
+        target: /opensc
+    network_mode: "host"
+    command:
+      - /bin/bash
+      - /opensc/OpenSC-build.sh
+    tty: true
+
+  buster:
+    image: debian:buster
     volumes: 
       - type: bind
         source: .

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-openscver='0.19.0' # as stated on GitHub
-openscver_package='0.19.0-1~nitrokey' # package name
+openscver='0.20.0' # as stated on GitHub
+openscver_package='0.20.0-1~nitrokey' # package name
 system=$(grep ^ID= /etc/os-release | cut -f2 -d'=')
 
 if [ "$system" == "ubuntu" ]; then 
@@ -39,6 +39,7 @@ echo "opensc ($openscver_package) unstable; urgency=medium" >> changelog
 echo >> changelog
 echo "  * New upstream release." >> changelog
 echo >> changelog
+#TODO may add actual date in changelog below
 echo " -- Szczepan Zalega <szczepan@nitrokey.com>  Fri, 13 Apr 2018 11:43:07 +0200" >> changelog
 echo >> changelog
 cat opensc-$oldopenscver/debian/changelog >> changelog
